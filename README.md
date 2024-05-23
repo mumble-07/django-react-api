@@ -1,3 +1,6 @@
+### THIS IS MY NOTES LOOK AWAY >,<
+
+
 `pip install django djangorestframework`
 `django-admin startproject <project-name>`
 `cd <project-name>`
