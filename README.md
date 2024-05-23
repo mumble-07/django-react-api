@@ -79,3 +79,45 @@ now we import the RoomView class
 
 > ADDING REACT/FRONTEND
 
+cd music_app
+npm
+
+create new app inside the project
+`django-admin startapp frontend`
+cd frontend
+create new folders
+folder: 
+* templates
+*static > all static files
+- frontend > bundle of all javascript
+- css
+- images
+*src 
+- components
+
+inside frontend 
+`npm init -y`
+
+next is install bunch of stuff in npm
+
+**⌨ NPM Setup Commands ⌨**
+```npm init -y```
+```npm i webpack webpack-cli --save-dev```
+```npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev```
+```npm i react react-dom --save-dev```
+```npm install @material-ui/core```
+```npm install @babel/plugin-proposal-class-properties```
+```npm install react-router-dom```
+```npm install @material-ui/icons```
+
+
+=====================
+
+
+create babel file: `A:\GH-Repositories\django-react\music_app\frontend\babel`
+next create anopther file: 
+webpack.config.js
+
+what webpack does is bundle all js and makes a bundle into 1 file.
+`A:\GH-Repositories\django-react\music_app\frontend\webpack.config.js`
+
