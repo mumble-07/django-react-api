@@ -8,8 +8,9 @@ from .models import Room
 
 # def main(request):
 #   return HttpResponse("<h1>Hello World</h1>")
-  
-class RoomView(generics.CreateAPIView): #create a room CreateAPIView, ListAPIView
-  queryset = Room.objects.all()
-  serializer_class = RoomSerializer
+
+class RoomView(generics.CreateAPIView):
+# class RoomView(generics.ListAPIView): #create a room CreateAPIView, ListAPIView
+  queryset = Room.objects.all() # what we want to return
+  serializer_class = RoomSerializer # json format(?)
   

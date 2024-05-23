@@ -2,6 +2,8 @@ from django.db import models
 import string
 import random
 
+
+# FOR UNIQUE ROOM CODE RANDOM Generator
 def generate_unique_code():
   length = 6
 
@@ -12,7 +14,7 @@ def generate_unique_code():
 
   return code
 
-# Create your models here.
+# Create your models here. PUT MOST OF YOUR LOGICS ON MODELS
 class Room(models.Model):
   code = models.CharField(max_length=8, default="", unique=True)
   host = models.CharField(max_length=50, unique=True)
